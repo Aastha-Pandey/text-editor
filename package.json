@@ -3,10 +3,13 @@
   "private": true,
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel src/index.html && tailwind build src/index.css -o src/tailwind.css --watch",
     "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "^2.0.0"
+    "autoprefixer": "^10.4.0",
+    "parcel": "^2.0.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
   }
 }
